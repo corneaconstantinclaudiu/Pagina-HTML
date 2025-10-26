@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center; /* Centrează orizontal */
+    align-items: center;    /* Centrează vertical */
+    min-height: 100vh;      /* Ocupă tot ecranul pe înălțime */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* O face perfect rotundă */
+    border: 3px solid #007bff;
+    object-fit: cover;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+}
+
+header p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column; /* Așază link-urile unul sub altul */
+    gap: 15px; /* Spațiu între link-uri */
+}
+
+.link-card {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s; /* Efect la hover */
+}
+
+.link-card:hover {
+    transform: scale(1.05); /* Mărește ușor cardul la hover */
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+}
